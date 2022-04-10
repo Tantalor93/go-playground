@@ -21,6 +21,7 @@ jobs:
         workflow: 'Go main benchmark'
         name: benchmark-data
         branch: main
+        github_token: ${{secrets.GITHUB_TOKEN}}
     - name: Store benchmark result
       uses: benchmark-action/github-action-benchmark@v1
       with:
