@@ -20,6 +20,7 @@ jobs:
       with:
         workflow: 'Go main benchmark'
         name: benchmark-data
+        branch: main
     - name: Store benchmark result
       uses: benchmark-action/github-action-benchmark@v1
       with:
