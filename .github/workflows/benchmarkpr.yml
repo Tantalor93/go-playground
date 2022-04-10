@@ -18,7 +18,7 @@ jobs:
     - name: Download artifact
       uses: dawidd6/action-download-artifact@v2
       with:
-        workflow: 'Go main benchmark'
+        workflow: benchmark.yml
         name: benchmark-data
         branch: main
         github_token: ${{secrets.GITHUB_TOKEN}}
